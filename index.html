@@ -1,45 +1,132 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="en"><head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A modern and simple portfolio page to showcase projects and skills.">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <!-- Header -->
-    <header>
-        <div class="header-content">
-            <h1>My Portfolio</h1>
-            <p>A showcase of projects and skills</p>
+    <title>katleal.xyz</title>
+	<link rel="icon" type="image/png" href="assets/profile-pic.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">katleal</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#experience">Services</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">@katleal</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
-    </header>
-
-    <!-- Projects Section -->
+        <div class="menu-links">
+          <li><a href="#experience" onclick="toggleMenu()">Services</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profile-pic.png" alt="katleal profile picture">
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">katleal</h1>    
+		<p> I'm a self-taught 17 year old Filipino minecraft server developer and configurator</p>
+        <p> I am currently <b>Owner/Main Developer</b> of <b><a href="https://magbungkal.net">magbungkal.net</a></b>		
+        </p><div class="btn-container">
+        </div>
+        <div id="socials-container">
+          <img src="./assets/discord.png" alt="My LinkedIn profile" class="icon" onclick="location.href='@katleal'">
+          <img src="./assets/github.png" alt="My Github profile" class="icon" onclick="location.href='https://github.com/katleal'">
+        </div>
+      </div>
+  </section>
+    <h1 class="title"></h1>      
+    
+    <section id="experience">
+      <h2 class="title">Services</h2>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <div class="article-container">
+              <article>
+                <img src="./assets/denizen-scripting.png" alt="Experience icon" class="icon">
+                <div>
+                  <h3>Denizen Scripting</h3>
+                  <p>8+ months</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/plugin-config.png" alt="Experience icon" class="icon">
+                <div>
+                  <h3>Plugin Configuration</h3>
+                  <p>2+ years</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/discord.png" alt="Experience icon" class="icon">
+                <div>
+                  <h3>Discord Bot Development</h3>
+                  <p>1+ years</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/minecraft.png" alt="Experience icon" class="icon">
+                <div>
+                  <h3>Server Development</h3>
+                  <p>2+ years</p>
+                </div>  
+                
+          </article></div>
+      </div>
+    </div></div></section>
     <section id="projects">
-        <h2>Projects</h2>
-        <div class="projects-container">
-            <div class="project">
-                <h3>Project 1</h3>
-                <p>A description of the first project.</p>
-            </div>
-            <div class="project">
-                <h3>Project 2</h3>
-                <p>A description of the second project.</p>
-            </div>
-            <div class="project">
-                <h3>Project 3</h3>
-                <p>A description of the third project.</p>
-            </div>
-        </div>
+      <p class="section__text__p1">My Recent</p>
+      <h1 class="title">Projects</h1>
+       
+      <h1 class="title">(TBA)</h1>  
+          
+
+        
+      
     </section>
-
-    <!-- Footer -->
+    <section id="contact">
+      <p class="section__text__p1">If you have any questions, please</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon">
+          <p><a href="mailto:katleal@gmail.com">katleal@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img src="./assets/discord.png" alt="LinkedIn icon" class="icon contact-icon">
+          <p><a href="https://www.linkedin.com">@katleal</a></p>
+        </div>
+      </div>
+    </section>
     <footer>
-        <p>&copy; 2024 Your Name. All Rights Reserved.</p>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright © 2024 @katleal. All Rights Reserved.</p>
     </footer>
+    <script src="script.js"></script>
+  
 
-    <script src="scripts.js"></script>
-</body>
-</html>
+</body></html>
